@@ -34,7 +34,7 @@ public class App extends JFrame {
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
-		contentPane.setLayout(new GridLayout(4, 4, 10, 10));
+		contentPane.setLayout(new GridLayout(4, 4, 33, 33));
 		setCards();
 		
 		pack();
@@ -47,7 +47,7 @@ public class App extends JFrame {
 		for (int i = 0; i < 16 ; i++) 
 		{
 			cards[i] = new Card(i % 8);
-			add(cards[i]);
+			getContentPane().add(cards[i]);
 		}
 	}
 
